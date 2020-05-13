@@ -20,7 +20,12 @@ z-index: 99;
 input[type=text]:focus{
 width: 300px;
 }
-
+#contacts{
+    background-image: url("./heya.jfif");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
 .nav-menu li {
 position: relative;
 white-space: nowrap;
