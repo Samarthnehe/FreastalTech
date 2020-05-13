@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="comp.css">
+</head>
+<body  style="background-color:rgb(255, 255, 255);">
+<div class="heading" style="background-color: rgb(35, 179, 223);height: 100px;padding-top: 30px;border: 1px solid black;" align="center">
+    <h1>FREASTAL TECHNOLOGY</h1>
+</div>
+<div id="contacts" align="center" style="padding-top: 30px;background-color: rgb(255, 255, 255)">
+    <div id="samarth" style="height: 60px;">
+                   
+        <nav id="nav-menu-container"  >
+            <ul class="nav-menu" >
+                <li class="menu-active" style="padding-left: 630px;"><a href="student.html">POST</a></li>
+            
+                <li><a href="fetch.html">GET</a></li>
+                <li><a href="update.html">UPDATE</a></li>
+                <li><a href="delete.html" >DELETE</a></li>
+              
+            </ul>
+        </nav>
+        
+    </div> 
+        <div class="form">
+        <div id="errormessage"></div>
+        <form action="stu.php" method="post"id="contactForm" name="contactForm">
+        <div class="form">
+            <div class=columns>
+                <div class="fill">
+                    <div class="form-group col-lg-6" >
+                        <input type="text" style="border: black 1px solid;" name="username"  class="form-control" required id="username" size="30" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <span class="error"><p id="name_error"></p></span>
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group col-lg-6">
+                        <input type="text" style="border: black 1px solid;" min="0" name="std" class="form-control" required id="std" size="30" placeholder="Standard" data-rule="minlen:4"  />
+                        <span class="error"><p id="name_error"></p></span>
+                        <div class="validation"></div>
+                      </div>
+                      
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="fill">
+            <div class="form-group">
+                <input type="number" style="border: black 1px solid;" class="form-control" min="1" name="age" id="age"size="30" required placeholder="age" data-rule="minlen:4"  />
+                <span class="error"><p id="subject_error"></p></span> 
+                <div class="validation"></div>
+              </div>
+        </div>
+        
+        <div class="submiting">
+            <input type="submit" class="buttons" style="width: 80px; height: 30px;background-color: black; color: white;border: white 1px solid; ">
+        </div>
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>
